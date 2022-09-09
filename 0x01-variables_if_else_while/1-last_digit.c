@@ -5,14 +5,13 @@
  * main - print if the number is postive, zero, or negative
  *
  * Description: using the main function
- * Description: using the main function
  * Return: 0
  */
 int main(void)
 {
 	int n;
 	int l;
-	
+
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	l = n % 10;
@@ -29,5 +28,5 @@ int main(void)
 	{
 		printf("Last digit of %d is %d and is less than 6 and not 0\n", n, l);
 	}
-	return(0);
+	return (0);
 }
