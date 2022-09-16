@@ -6,22 +6,17 @@
  * Return:void
  */
 
-void print_triangle(int size)
+void print_number(int n)
 {
-	int i = 1, ii;
+	unsigned int x;
 
-	while (i <= size && size > 0)
+	x = n;
+	if (n < 0)
 	{
-		ii = 0;
-		while (ii < size - i)
-		{
-			_putchar(' ');
-			i++;
-		}
-
-		_putchar('\n');
-		i++;
+		_putchar(45);
+		x = -n;
 	}
-	if (i == 1)
-		_putchar('\n');
+	if (x / 10)
+		print_number(x / 10);
+	_putchar((x % 10) + '0');
 }
